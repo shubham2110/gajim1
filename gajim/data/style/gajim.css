@@ -1,0 +1,280 @@
+/* Gajim Application CSS File */
+
+.gajim-msg-correcting text {
+    background: rgb(238, 232, 170)
+    }
+.gajim-state-tab-muc-directed-msg {
+    color: rgb(238, 0, 0)
+    }
+.gajim-state-tab-muc-msg {
+    color: rgb(0, 0, 205)
+    }
+
+.chatcontrol-actionbar-button { 
+	padding: 0px 5px 0px 5px;
+	background-color: @theme_base_color; 
+	border: none;
+	}
+
+.scrolled-no-border {border: none}
+.no-scroll-indicator undershoot.top, undershoot.bottom { background-image: none; }
+.scrollbar-style scrollbar trough {background-color:@theme_base_color; }
+.scrollbar-style scrollbar {border:none; }
+.scrollbar-style slider {min-width: 3px; background-color: #a0a3a4}
+.one-line-scrollbar scrollbar.vertical slider { min-height: 20px; }
+
+.actionbar-no-border box {border: none}
+.actionbar-no-border button { 
+	padding: 0px;
+	background-color: @theme_base_color; 
+	border: none;
+	background-image: none;
+	}
+
+.dialog-margin > box { margin: 18px;}
+
+#MessageWindow, #RosterWindow paned { background-color:  @theme_base_color; }
+
+.chatcontrol-separator-top {margin-top: 5px;}
+
+.chatcontrol-separator {margin-bottom: 5px;}
+
+.link-button { min-height: 0px }
+
+/* VCardWindow */
+.VCard-GtkLinkButton { padding-left: 5px; border-left: none; }
+
+/* Emoticon Popover */
+popover#EmoticonPopover button { background: none; border: none; box-shadow:none; padding: 0px;}
+popover#EmoticonPopover button > label { font-size: 24px; }
+popover#EmoticonPopover flowboxchild > label { font-size: 24px; }
+popover#EmoticonPopover flowboxchild { padding-top: 5px; padding-bottom: 5px; }
+popover#EmoticonPopover scrolledwindow { border: none; }
+popover#EmoticonPopover { padding: 5px; background-color: @theme_unfocused_base_color}
+
+.emoji-chooser-heading { font-size: 13px; font-weight: bold; padding: 5px;}
+.emoji-chooser-flowbox { padding-left: 5px; padding-right: 11px; }
+.emoji-modifier-chooser-flowbox { padding-left: 5px; }
+
+/* HistorySyncAssistant */
+#HistorySyncAssistant notebook { padding: 18px; }
+#HistorySyncAssistant progressbar text { color: #000; font-size: 18px; padding: 10px;}
+#HistorySyncAssistant list { border: 1px solid; border-color: @borders; }
+#HistorySyncAssistant list > row { padding: 10px 30px 10px 30px; }
+#HistorySyncAssistant list > row > label { color: @insensitive_fg_color }
+#HistorySyncAssistant list > row.activatable > label { color: @theme_text_color; }
+#HistorySyncAssistant list > row.activatable:selected > label { color: @theme_selected_fg_color; }
+#FinishedLabel { font-size: 14px; font-weight: bold }
+
+/* Server Info */
+#ServerInfo { border: 1px solid; border-color: @borders; }
+#ServerInfo > row:first-child { border-top: 1px solid; border-color: @borders; }
+#ServerInfo > row { padding: 10px 20px 10px 10px; }
+#ServerInfo > label { padding:10px; color: @insensitive_fg_color; font-weight: bold; }
+#ServerInfo > row.activatable:active { box-shadow: none; }
+
+/* Features Info */
+#FeaturesInfoGrid > list { border: 1px solid; border-color: @borders; }
+#FeaturesInfoGrid > list > row:first-child { border-top: 1px solid; border-color: @borders; }
+#FeaturesInfoGrid > list > row { padding: 10px 20px 10px 10px; }
+#FeaturesInfoGrid > list > label { padding:10px; color: @insensitive_fg_color; font-weight: bold; }
+#FeaturesInfoGrid > list > row.activatable:active { box-shadow: none; }
+
+/* SettingsBox */
+.settings-box > row { border-bottom: 1px solid; border-color: @theme_unfocused_bg_color; }
+.settings-box > row:last-child { border-bottom: 0px}
+.settings-box > row.activatable:active { box-shadow: none; }
+.settings-box > row { padding: 10px 20px 10px 10px; }
+.settings-box > row:not(.activatable) label { color: @insensitive_fg_color }
+
+/* GenericSetting */
+#SubDescription { color: @insensitive_fg_color; font-size: small;}
+#GenericSettingBox { margin-left: 30px; }
+#GenericSettingBox > label { padding-right: 3px; }
+
+/* Generic Popover Menu with Buttons */
+.PopoverButtonListbox { padding-left: 0px; padding-right: 0px; }
+.PopoverButtonListbox > list { margin-top: 10px; margin-bottom: 10px; }
+.PopoverButtonListbox > list > row { padding: 10px 20px 10px 20px; }
+.PopoverButtonListbox > list > row.activatable:active { box-shadow: none; background-color: @theme_selected_bg_color }
+
+/* Settings ListBox */
+
+list.settings {
+	border: @borders 1px solid;
+}
+list.settings > row:not(:last-child) {
+	border-bottom: @theme_unfocused_bg_color 1px solid;
+}
+list.settings row { min-height: 52px; }
+list.settings > row > box {
+    margin: 6px 18px;
+}
+
+/*SendFileDialog*/
+#SendFileDialog grid list > row { padding: 10px 20px 10px 10px; }
+
+/* Preferences Window */
+.PreferencesWindow { background-color: @theme_base_color; }
+.PreferencesStack { background-color: @theme_bg_color; }
+
+/* Accounts Window */
+.accounts-menu { border-right: 1px solid; border-color: @borders;}
+.accounts-settings-border {border: 1px solid; border-color: @borders;}
+.accounts-settings stack > box { margin:30px; }
+.accounts-label-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: @insensitive_fg_color;}
+
+/* Start Chat Accounts Treeview */
+.start-chat-treeview { padding: 5px; }
+.start-chat-treeview:focus {outline: none; }
+.start-chat-scrolled { border: 1px solid; border-color:@unfocused_borders; }
+
+/* StartChatListBox */
+.start-chat-row { border-bottom: 1px solid; border-color: @theme_unfocused_bg_color; }
+.start-chat-row:last-child { border-bottom: 0px}
+.start-chat-row.activatable:active { box-shadow: none; }
+.start-chat-row { padding: 10px 20px 10px 10px; }
+.start-chat-row:not(.activatable) label { color: @insensitive_fg_color }
+.start-chat-row:focus { outline: none; }
+
+/* GroupChatRoster */
+.groupchat-roster { border-left: 1px solid;
+                    border-color: @borders; }
+.groupchat-roster treeview { padding-left: 4px; }
+
+/* GroupchatConfig */
+#GroupchatConfig > box > buttonbox { margin: 0px 12px 12px 12px; }
+#GroupchatConfig stack { border-bottom: 1px solid; border-color: @borders;}
+#GroupchatConfig stacksidebar > scrolledwindow {
+    background-color:@theme_base_color;
+    border-bottom: 1px solid;
+    border-color: @borders;}
+#GroupchatConfig treeview { padding: 5px; }
+
+/* Popover Treeview */
+.popover_treeview { border-radius: 3px; background-color: @theme_bg_color; }
+.popover_treeview { padding: 6px; }
+.popover_treeview :hover { background-color: @theme_selected_bg_color; }
+
+/* .inline-toolbar linked from top */
+.ontop-bar {
+    border-width: 1px;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    padding: 5px;
+}
+
+/* Container with buttons linked from below */
+.linked-up * {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Highlighted label */
+.tagged {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    padding: 0 3px;
+    margin: 0 -3px;
+    border-radius: 3px;
+    text-shadow: none;
+    opacity: 0.95;
+}
+
+/* ThemesWindow */
+#ThemesWindow grid { padding: 12px; }
+
+.theme_listbox row { border-bottom: 1px solid; border-color: @theme_unfocused_bg_color; padding: 5px 10px 5px 10px;}
+.theme_listbox row:last-child { border-bottom: 0px}
+.theme_listbox row.activatable:active { box-shadow: none; }
+.theme_listbox row:not(.activatable) label { color: @insensitive_fg_color }
+.theme_listbox row:focus { outline: none; }
+.theme_listbox row:hover { background-color: @theme_base_color }
+
+.theme_remove_button {
+    background-color: @theme_base_color; 
+    border: none;
+    background-image: none; }
+
+.theme_remove_button:focus {outline: none;}
+
+.theme_popover_listbox { padding: 10px; }
+.theme_popover_listbox row { padding: 5px; }
+.theme_popover_listbox row:focus { outline: none; }
+
+
+/* Text style */
+
+.bold { font-weight: bold; }
+.bold16 { font-size: 16px; font-weight: bold; }
+.bold24 { font-size: 24px; font-weight: bold; }
+.large-header { font-size: 20px; font-weight: bold; }
+.status-away { color: #ff8533;}
+.status-dnd { color: #e62e00;}
+.status-online { color: #66bf10;}
+.insensitive-fg-color {color: @insensitive_fg_color;}
+
+/* Padding/Margins */
+.margin-top6 { margin-top: 6px; }
+.margin-top12 { margin-top: 12px; }
+.margin-12 { margin: 12px; }
+.margin-18 { margin: 18px; }
+.padding-18 { margin: 18px; }
+.padding-left30 { padding-left: 30px; }
+
+/* Treeview */
+treeview.space { padding: 6px; }
+
+/* GtkLinkButton style */
+button.flat.link { padding: 0; border: 0; }
+
+/*MessageWindow Notebook*/
+.notebook-tab-label {min-width: 80px}
+
+/*Icon colors*/
+.success-color { color: @success_color; }
+.error-color { color: @error_color; }
+.warning-color { color: @warning_color; }
+.selected-color { color: @theme_selected_bg_color; }
+
+/*Encryption*/
+.encrypted-color { color: rgb(75, 181, 67) }
+.unencrypted-color { color: @error_color }
+
+/*Receipts*/
+.receipt-received-color { color: rgb(75, 181, 67) }
+
+/*Dataforms*/
+.field-fixed { font-size: 16px; font-weight: bold; padding-top:5px;}
+.data-form-title { font-size: 16px; font-weight: bold; }
+.data-form-widget grid { margin: 0px 18px 18px 18px; }
+.data-form-widget treeview { padding: 5px; }
+.data-form-widget scrolledwindow { border: 1px solid; border-color:@unfocused_borders; }
+.data-form-widget textview { padding: 5px; }
+
+/*Image Preview*/
+.preview-image { box-shadow: 0px 0px 3px 0px alpha(@theme_text_color, 0.2); }
+
+/* Treeview */
+.adhoc-treeview { padding: 5px; }
+.adhoc-scrolled { border: 1px solid; border-color:@unfocused_borders; }
+
+/* Search Dialog */
+.search-treeview { padding: 5px; }
+.search-scrolled { border: 1px solid; border-color:@unfocused_borders; }
+
+.gajim-treeview { padding: 4px; }
+.gajim-treeview check { padding: 0px; }
+.gajim-scrolled { border: 1px solid; border-color:@unfocused_borders; }
+
+
+#GroupchatJoin > box {padding: 18px; }
+
+.assistant-grid { padding: 18px; margin: 6px;}
+.assistant-grid > box stack  { padding: 18px; }

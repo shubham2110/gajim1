@@ -1,0 +1,36 @@
+syntax: glob
+*.orig
+*.swp
+*.gmo
+*.in
+*.m4
+*.pyc
+*.pyo
+*~
+*#
+autom4te.cache
+data/org.gajim.Gajim.appdata.xml
+data/org.gajim.Gajim.desktop
+libtool
+po/.intltool-merge-cache
+data/gajim-remote.desktop
+po/gajim.pot
+po/POTFILES
+po/stamp-it
+stamp-h1
+Makefile
+__pycache__/
+.mypy_cache/
+build/
+dist/
+gajim.egg-info/
+src/gtk/
+win/_build_root
+.vscode
+
+syntax: regexp
+^config\.*
+^config\/
+^scripts\/gajim.*
+
+!MANIFEST.in
